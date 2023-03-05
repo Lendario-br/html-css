@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Formatação de texto 3</title>
+    <style>
+        body{
+            background-color: rgb(172, 83, 83);
+        }
+        h2{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        pre{
+            border: 2px solid black;
+            text-align: center;
+            margin-right: 350px;
+            margin-left: 380px;
+            background-color: rgb(202, 110, 110);
+        }
+        blockquote{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">Continuando a Formatação</h1>
+    <hr>
+    <h2>Código-fonte / Prê-formatação</h2>
+    <p>Podemos uar a tag CODE para resaltar algo tipo: <code>document.getElementById('Teste')</code> Isso é JS</p>
+    <p>Também podemos colocar como forma de código de programação usando as tags PRE e CODE</p>
+    <pre>
+        <code>
+            nome = input('Digite seu nome: ')
+            if nome == 'Pedro':
+                print('Teu nome é lindo')
+                print('Seja bem-vindo {}!'.format(nome))
+            else:
+            print('Seja bem-vindo {}!'.format(nome))
+        </code>
+    </pre>
+    <hr>
+    <h2>Citações simples</h2>
+    <p>Segundo Marcos Lucass: <q>Usamos a tag Q para marcar uma sitação!</q></p>
+    <hr>
+    <h2>Citações Completas</h2>
+    <p>Segundo Marcos Lucass: <blockquote cite="https://www.youtube.com/watch?v=_83KqwEEGw4&list=RDGMEMQ1dJ7wXfLlqCjwV0xfSNbA&index=4">
+        Usando a Tag BLOCKQUOTE cria uma citação com URL.
+    </blockquote></p>
+    <hr>
+    <h2>Abreviações</h2>
+    <p>Você gosta de <abbr title="linguagem de texto">HTML</abbr> e <abbr title="Linguagem de estilo">CSS3</abbr> ? (isso é possivel usando a tag ABBR)</p>
+    <hr>
+    <h2>Texto invertido</h2>
+    <p>Use a Tag BDO para <bdo dir="rtl">enverter o texto!</bdo></p>
+</body>
+</html>

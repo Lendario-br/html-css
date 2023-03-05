@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas, sombras e bordas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: rgb(65, 76, 80);
+        }
+        header{
+            background-color: white;
+            margin: 10px;
+        }
+        header > h1{
+            box-shadow: inset 3px 3px 6px 2px rgba(0, 0, 0, 0.363);
+        }
+        nav{
+            box-shadow: 3px 3px 6px 2px rgba(0, 0, 0, 0.363);
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            margin: 30px;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: red;
+        }
+        main{
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px 0px;
+        }
+        section{
+            background-color: lightslategray;
+        }
+        aside{
+            background-color: green;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0;
+        }
+        footer > p{
+            margin: 0;
+        }
+        #bola{
+            height: 100px;
+            width: 100px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Titulo central</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Sub-titulo</h2>
+        </section>
+        <section>
+            <h2>Sub-tituloSub-titulo</h2>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus facilis adipisci dolores id nostrum impedit quibusdam sequi possimus ab cupiditate, consequuntur delectus eveniet repudiandae explicabo ullam, rerum voluptatem. Nulla, odit.</p>
+                <aside>
+                    <p>By: Pedrinho</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Aprendendo Css e Html </p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

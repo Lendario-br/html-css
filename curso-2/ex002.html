@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente</title>
+    <style>
+        body{
+            background-color: #B09712;
+        }
+        div#duascores{
+            height: 600px;
+            width: 800px;
+            border-radius: 5%;
+            background-color: #1c11b1;
+            color: #ffffff;
+        }
+        header{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+        }
+        div.a{
+            height: 300px;
+            width: 300px;
+            margin: auto;
+            margin-top: 60px;
+            background-image: linear-gradient(to right,#F77E9A,#75192E);
+            border: 1px black solid;
+
+        }
+        div#maiscores{
+            width: 600px;
+            height: 600px;
+            margin-left: 820px;
+            margin-top: -598px;
+            border-radius: 5%;
+            color: white;
+            background-color: #1c11b1;
+        }
+        div.bola{
+            width: 200px;
+            height: 200px;
+            margin-top: 100px;
+            margin-left: 40px;
+            background-image: radial-gradient(circle,#A1FF78,#55AD2F,green);
+            border: 1px solid black;
+        }
+        div.graus{
+            width: 200px;
+            height: 200px;
+            margin-top: -202px;
+            margin-left: 340px;
+            background-image: linear-gradient(-45deg,blue,red,yellow);
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="duascores">
+        <header>Aplicando o Gradiente no site</header>
+        <p>Usando o código:<br><br><code>
+            background-image: linear-gradient(<strong>direção</strong>,<strong>cor-inicial</strong>,<strong>cor-final</strong>);
+        </code><br><br>ele irá criar um degrade na direção escolhida e ele vai da primeira cor ate<br>a final, podendo adicionar mais de uma cor ao código.<br><br><strong>to top ^, to bottom v, to left >, to right.</strong></p>
+        <div class="a"></div>
+    </div>
+    <div id="maiscores">
+        <header>Também</header>
+        <p>Podemos decidir como vai ser o degrade e podemos colocar<br>onde ele começa usando o 0deg (graus)<br><br><code>
+            background-image: radial-gradient(<strong>circle</strong>,cor-inicial,cor-final);<br>
+            background-image: linear-gradient(<strong>45deg</strong>,cor-inicial,cor-final);
+        </code></p>
+        <div class="bola"></div>
+        <div class="graus"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Usando links</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: rgb(113, 124, 50);
+        }
+        h2{
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vamos aprender a usar links externos!</h1>
+    <h2>Para usar um link, basta usar a tag A e inserir a URL do lugra que queira.</h2>
+    <p>Usamos também a tag REL="external"</p>
+    <p>Clique aqui para ir para o <a href="https://www.youtube.com/" rel="external">YouTube</a>!</p>
+    <h2>Podemos também aprir outra página para o link, isso faz que seu site não seja fechado, basta usar dentro da tag A a Tag TARGET="_blank"</h2>
+    <p>Clique aqui para ir para o <a href="https://www.youtube.com/" target="_blank" rel="external">YouTube</a>!</p>
+    <h1>Usando liks Internos!</h1>
+    <h2>Podemos usar a TAG TARGET="_self" para ir em outra página do nosso site, para isso ela deve estár na mesma pasta!</h2>
+    <p>Usamos também a tag REL="next"</p>
+    <p>Clique aqui para ir para a <a href="pag2.html" target="_self" rel="next">segunda página</a> </p>
+    <h2>Podemos acesar outra pasta dentro do nosso site</h2>
+    <p>basta colocar o endereço dela: pasta/site.com/</p>
+    <p>Clique aqui para ver nossa página de <a href="noticias/pag3.html" rel="next" target="_self">notícias</a>!</p>
+</body>
+</html>

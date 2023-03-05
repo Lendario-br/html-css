@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Pseudo-class</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .negrito{
+            font-weight: bold;
+        }
+        div.d1{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            background-color: gray;
+            text-align: center;
+            display: inline-block;/* inline: em linha*/
+        }
+        div.d1:hover{
+            background-color: yellow;
+        }
+
+        .d2{
+            font-size: 1.2em;
+        }
+        div.d2 > p{
+            display: none;
+        }
+        div.d2:hover{
+            color: green;
+        }
+        div.d2:hover > p{
+            display: block;
+            font-size: 2em;
+            color: cadetblue;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alinhando divs</h1>
+    <p>Usando a tag <span class="negrito">Display</span> e o código <span class="negrito">inline-block</span>.</p>
+    <div class="d1" >01</div>
+    <div class="d1" >02</div>
+    <div class="d1" >03</div>
+    <div class="d1" >04</div>
+
+    <h1>Escondendo elementos</h1>
+    <p>Aui tem um texto escondido usando <span class="negrito">Display:none; <div class=""></div></span></p>
+    <div class="d2">
+        ~~Passe o mouse aqui~~
+        <p>Achou o texto escondido!!!</p>
+    </div>
+</body>
+</html>
